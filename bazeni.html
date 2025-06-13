@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moja Firma</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #222;
+  background-color: #f8f9fc;
+}
+
+header {
+  background: #0d3b66;
+  color: white;
+  padding-bottom: 2rem;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #00264d;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding: 3rem 2rem;
+  background-color: #ffffff;
+}
+
+.card {
+  background: #f4f6fa;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+.image-placeholder1 {
+  width: 100%;
+  height: 180px;
+  background-image: url('slike/plocice1.jpg'); /* relativna putanja */
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.image-placeholder2 {
+  width: 100%;
+  height: 180px;
+  background-image: url('slike/mozaik2.jpg'); /* relativna putanja */
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.image-placeholder3 {
+  width: 100%;
+  height: 180px;
+  background-image: url('slike/mozaik3.jpeg'); /* relativna putanja */
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.image-placeholder4 {
+  width: 100%;
+  height: 180px;
+  background-image: url('slike/mozaik3.jpeg'); /* relativna putanja */
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.image-placeholder5 {
+  width: 100%;
+  height: 180px;
+  background-image: url('slike/mozaik4.jpg'); /* relativna putanja */
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.image-placeholder6 {
+  width: 100%;
+  height: 180px;
+  background-image: url('slike/mozaik3.jpeg'); /* relativna putanja */
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.media-section {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: #eaeef3;
+}
+
+.media-placeholder {
+  width: 100%;
+  height: 300px;
+  background: #cfd8dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #555;
+  font-size: 1.2rem;
+  border-radius: 12px;
+}
+.text {
+  width:100%;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+footer {
+  background: #00264d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+.table-custom {
+  border-collapse:  collapse;
+  width: auto;
+}
+
+.table-custom td, .table-custom th {
+  border: 1px solid black;
+  padding: 20px;
+  vertical-align: middle;
+}
+
+.table-custom img {
+  max-width: 200px; /* prilagodi po potrebi */
+  height: auto;
+}
+
+</style>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo">MojaFirma</div>
+      <nav class="nav">
+        <a href="#">Početna</a>
+        <a href="#">Usluge</a>
+        <a href="#">Galerija</a>
+        <a href="#">O nama</a>
+        <a href="#">Kontakt</a>
+      </nav>
+    </div>
+    <div class="hero">
+      <h1>Kompletno rešenje za izgradnju bazena</h1>
+      <p class="subtext">Građevinski radovi | Hidroizolacija | Postavljanje podloge | Oprema za bazene </p>
+    </div>
+  </header>
+
+  <main class="cards-section">
+    <div class="card">
+      <div class="image-placeholder1"></div>
+      <h3>Klasične keramičke/porcelanske pločice</h3>
+      <p>Obične glazure u jednobojnim nijansama, često se koriste na dnu i zidovima bazena koji ne zahtevaju dekor.</p>
+    </div>
+    <div class="card">
+      <div class="image-placeholder2"></div>
+      <h3>Jednobojni stakleni mozaik</h3>
+      <p>Sitne staklene kockice (1×1", 2×2") koje pružaju blistav efekat, lako održavanje i dug vek trajanja.</p>
+    </div>
+    <div class="card">
+      <div class="image-placeholder3"></div>
+      <h3>Geometrijski stakleni mozaik</h3>
+      <p>kombinacija heksagona i abstraktnih akcenata.</p>
+    </div>
+    <div class="card">
+      <div class="icon-placeholder">🍽️</div>
+      <h3>Apstraktni „ribbon“ stakleni mozaik</h3>
+      <p>Vitalni uzorci u nijansama plave i bele, kreiraju talasni efekat.</p>
+    </div>
+    <div class="card">
+      <div class="image-placeholder5"></div>
+      <h3>Dekorativni mozaik sa slikom </h3>
+      <p></p>
+    </div>
+    <div class="card">
+      <div class="icon-placeholder">🛍️</div>
+      <h3>Mozaik „border“ ili medalon</h3>
+      <p>mandale ili cvetni motivi oko ivice bazena ili kao centralni ukras .</p>
+    </div>
+    
+    <div class="text">
+  <table class="table-custom">
+    <tr>
+      <td>Ovo je neki tekst u prvom redu.asdasdasdasdasdas asdasdasdasdasd asdasdasdasdasdasdas asdasdasdasdasdasdasdasds</td>
+      <td><img src="slike\mozaik1.jpg" alt="Slika 1"></td>
+    </tr>
+    <tr>
+      <td>Ovo je drugi red teksta.</td>
+      <td><img src="slike\mozaik1.jpg" alt="Slika 2"></td>
+    </tr>
+    <!-- Dodaj još redova po potrebi -->
+  </table>
+</div>
+  </main>
+
+  <section class="media-section">
+    <!-- Ovde dodaj svoj video ili sliku -->
+    <div class="media-placeholder">[ Video ili slika ]</div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Moja Firma. Sva prava zadržana.</p>
+  </footer>
+</body>
+</html>
